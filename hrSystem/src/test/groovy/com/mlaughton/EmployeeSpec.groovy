@@ -11,8 +11,13 @@ class EmployeeSpec extends Specification implements DomainUnitTest<Employee> {
     def cleanup() {
     }
 
-    void "test something"() {
-        expect:"fix me"
-            true == false
+    void tenHoursOfWages() {
+when:"An employee specifices their hourly rate"
+
+def steve=new Employee(hourlyRate:5)
+
+then: "The calculateTenHoursOfWages method will total amount"
+
+steve.CalculateTenHoursOfWages()==50
     }
 }

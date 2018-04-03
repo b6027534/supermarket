@@ -10,6 +10,10 @@ Date dateEmployed
 String taxCode
 String contract
 
+int CalculateTenHoursOfWages(){
+10*hourlyRate
+}
+
     static constraints = {
 fullName nullable: false, blank: false
 dateOfBirth nullable: false, blank: false
