@@ -2,5 +2,5 @@ package com.mlaughton
 
 class TaskController {
 
-    def scaffold= Task { }
+    def scaffold= Task
 }

@@ -2,11 +2,11 @@ package com.mlaughton
 
 class Employee {
 String fullName
-date dateOfBirth
+Date dateOfBirth
 String residence
-double hourlyRate
+int hourlyRate
 String employeeID
-date dateEmployed
+Date dateEmployed
 String taxCode
 String contract
 
@@ -16,7 +16,7 @@ dateOfBirth nullable: false, blank: false
 residence nullable: false, blank: false
 hourlyRate nullable: false, blank: false
 employeeID nullable: false, blank: false
-dateEmployed nullable: fasle, blank: false
+dateEmployed nullable: false, blank: false
 taxCode nullable: false, blank: false
 contract nullable: false, blank: false
     }

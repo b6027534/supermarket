@@ -2,5 +2,5 @@ package com.mlaughton
 
 class ManagerController {
 
-    def scaffold= Manager { }
+    def scaffold= Manager
 }

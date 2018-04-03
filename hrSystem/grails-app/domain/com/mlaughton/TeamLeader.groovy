@@ -14,7 +14,7 @@ fullName nullable: false, blank: false
 department nullable: false, blank: false
 employeeID nullable: false, blank: false
 sectionName nullable: false, blank: false
-officePhone nullable: false, blank: false, maxSize: 10
+officePhone nullable: false, blank: false
 leaderEmail nullable: false, blank: false, email: true
 password nullable: false, blank: false
     }

@@ -2,5 +2,5 @@ package com.mlaughton
 
 class ShiftController {
 
-    def scaffold= Shift { }
+    def scaffold= Shift
 }
