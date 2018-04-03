@@ -11,8 +11,13 @@ class ManagerSpec extends Specification implements DomainUnitTest<Manager> {
     def cleanup() {
     }
 
-    void "test something"() {
-        expect:"fix me"
-            true == false
+    void sameValue() {
+        when: "the username and password is the same"
+
+	def manager=new Manager(userName:'Michael', password:'Michael')
+
+	then: "the return value is true"
+	
+manager.sameUserAndPass()==true
     }
 }

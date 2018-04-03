@@ -9,6 +9,15 @@ String managerEmail
 String office
 String department
 
+Boolean sameUserAndPass(){
+if (userName == password) {
+return true
+}
+if (userName != password) {
+return false
+}
+}
+
     static constraints = {
 fullName nullable: false, blank: false
 userName nullable: false, blank: false
