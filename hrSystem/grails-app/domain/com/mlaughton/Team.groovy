@@ -6,6 +6,12 @@ int numberOfEmployees
 String sectionName
 String description
 
+String comma = ', ';
+
+String toString() {
+teamName+comma+numberOfEmployees+comma+sectionName
+}
+
     static constraints = {
 teamName nullable: false, blank: false
 numberOfEmployees nullable: false, blank: false
