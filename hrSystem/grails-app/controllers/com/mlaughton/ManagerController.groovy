@@ -1,6 +1,30 @@
 package com.mlaughton
 
-class ManagerController {
 
-    def scaffold= Manager
+ class ManagerController {
+ 
+def scaffold = Manager
+
+def login() {
+	
 }
+
+def validate() {
+def user = Manager.findByUserName(params.userName)
+def password = Manager.findByPassword(params.password)
+if (user || password) {
+	session.user = user
+	session.password = password
+	render view:'home'
+}
+else {
+flash.message = "Invalid username and password."
+render view:'login'
+}
+   }
+   
+def logout = {
+session.user = null
+redirect(uri:'/')
+   }
+ }
