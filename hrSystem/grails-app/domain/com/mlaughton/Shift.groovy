@@ -33,6 +33,11 @@ return true
 return false
 }
 
+String toString() {
+return dayOfWeek
+}
+
+
 static hasMany = [team:Team, employee:Employee, task:Task]
 
 static belongsTo = [Team]

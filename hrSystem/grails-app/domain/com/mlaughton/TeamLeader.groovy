@@ -5,7 +5,7 @@ String fullName
 String department
 String employeeID
 String sectionName
-int officePhone
+String officePhone
 String leaderEmail
 String password
 
@@ -22,6 +22,11 @@ if (fullName != '') {
 return false
 }
 }
+
+String toString() {
+return fullName
+}
+
 
     static constraints = {
 fullName nullable: false, blank: false

@@ -18,6 +18,10 @@ return false
 }
 }
 
+String toString() {
+return taskName
+}
+
 static hasMany = [shift:Shift, team:Team, employee:Employee]
 
 static belongsTo = [Team, Shift]

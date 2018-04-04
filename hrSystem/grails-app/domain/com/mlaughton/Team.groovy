@@ -9,9 +9,14 @@ TeamLeader teamLeader
 
 static hasMany = [shift:Shift, task:Task, employee:Employee]
 
+/*
 String toString() {
 String comma = ', ';
 teamName+comma+numberOfEmployees+comma+sectionName
+}
+*/
+String toString() {
+return teamName
 }
 
     static constraints = {

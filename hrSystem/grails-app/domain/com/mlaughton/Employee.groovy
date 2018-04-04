@@ -21,6 +21,10 @@ int CalculateTenHoursOfWages(){
 10*hourlyRate
 }
 
+
+String toString() {
+return fullName
+}
 static hasOne = [shift:Shift]
 
     static constraints = {

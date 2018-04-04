@@ -4,6 +4,8 @@ class BootStrap {
 
     def init = { servletContext ->
 
+/*
+
 def manager1=new Manager (
 fullName:'Bailey Sutton',
 userName:'bsutton',
@@ -99,6 +101,8 @@ timeOfDay:'Evening',
 dayOfWeek:'Friday',
 numberOfHours:'6',
 startingTime:'6:00pm').save()
+
+*/
 
     }
     def destroy = {
