@@ -11,8 +11,11 @@ class TeamLeaderSpec extends Specification implements DomainUnitTest<TeamLeader>
     def cleanup() {
     }
 
-    void "test something"() {
-        expect:"fix me"
-            true == false
+    void isTheValueNull() {
+        when: "the field is left null"
+def leader=new TeamLeader(fullName: '')
+
+then: "the return value is false"
+	leader.isItNull()==false
     }
 }

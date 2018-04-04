@@ -9,6 +9,15 @@ int officePhone
 String leaderEmail
 String password
 
+boolean isItNull() {
+if (fullName == '') {
+return true
+}
+if (fullName != '') {
+return false
+}
+}
+
     static constraints = {
 fullName nullable: false, blank: false
 department nullable: false, blank: false
