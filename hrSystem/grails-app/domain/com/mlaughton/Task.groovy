@@ -9,6 +9,15 @@ String timeRequired
 String description
 String taskCompleted
 
+boolean isTheTaskCompleted() {
+if (taskCompleted == 'yes') {
+return true
+}
+if (taskCompleted == 'no') {
+return false
+}
+}
+
     static constraints = {
 taskName nullable: false, blank: false
 numberOfPeople nullable: false, blank: false
