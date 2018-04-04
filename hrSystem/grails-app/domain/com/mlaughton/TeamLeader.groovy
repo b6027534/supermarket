@@ -9,6 +9,11 @@ int officePhone
 String leaderEmail
 String password
 
+Team team
+Manager manager
+
+static hasMany = [employee:Employee]
+
 boolean isItNull() {
 if (fullName == '') {
 return true
@@ -26,5 +31,8 @@ sectionName nullable: false, blank: false
 officePhone nullable: false, blank: false
 leaderEmail nullable: false, blank: false, email: true
 password nullable: false, blank: false
+team nullable: true, blank: true
+manager nullable: true, blank: true
+employee nullable: true, blank: true
     }
 }

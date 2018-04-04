@@ -33,11 +33,18 @@ return true
 return false
 }
 
+static hasMany = [team:Team, employee:Employee, task:Task]
+
+static belongsTo = [Team]
+
     static constraints = {
 timeOfDay nullable: false, blank: false
 dayOfWeek nullable: false, blank: false
 numberOfHours nullable: false, blank: false
 startingTime nullable: false, blank: false
+team nullable: true, blank: true
+employee nullable: true, blank: true
+task nullable: true, blank: true
 
     }
 }

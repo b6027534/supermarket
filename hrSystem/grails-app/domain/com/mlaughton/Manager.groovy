@@ -9,6 +9,8 @@ String managerEmail
 String office
 String department
 
+static hasMany = [teamLeader:TeamLeader, employee:Employee]
+
 Boolean sameUserAndPass(){
 if (userName == password) {
 return true
@@ -25,5 +27,7 @@ password nullable: false, blank: false
 managerEmail nullable: false, blank: false, email: true
 office nullable: false, blank: false
 department nullable: false, blank: false
+teamLeader nullable: true, blank: true
+employee nullable: true, blank: true
     }
 }
